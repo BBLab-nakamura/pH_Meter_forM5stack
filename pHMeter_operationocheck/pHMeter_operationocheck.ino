@@ -1,12 +1,12 @@
 // M5stackでpHセンサの動作確認を行うためのプログラムです
 // 使用したライブラリ https://github.com/m5stack/m5stack
-// adcについてはこちらのプログラムを参考にした https://github.com/uChip/MCP342X
-// メータの表示についてはこちらのプログラムを参考にした　https://github.com/Bodmer/TFT_eSPI
-// 温度はハードコーディングしていますので#define TEMPの値を書き換えてください
-// キャリブレーション機能については未実装。（近日対応予定）
+// adcについてはこちらのプログラムを参考にしました https://github.com/uChip/MCP342X
+// メータの表示についてはこちらのプログラムを参考にしました https://github.com/Bodmer/TFT_eSPI
+// 温度は#define TEMPの値を書き換えてください
+// キャリブレーション機能については未実装です。（近日対応予定）
 // 動作確認
-// Arduino 2.2.1 ESP board manager esp32 by Espressif 2.0.16 M5stack ライブラリ 0.4.6
-// Arduino 2.3.2
+// Arduino 2.3.2 ESP board manager esp32 by Espressif 2.0.16 M5stack ライブラリ 0.4.6
+// macでのビルドも確認
 // esp32のボードマネージャは最新のものにしておかないとエラーが出ることがある（再現確認はしていない）
 // 2024-05-19 S.Nakamura
 
@@ -43,7 +43,6 @@ void setup(){
 
   Serial.println("pH sensor start");
   LCDStartDisp();   // 起動画面の表示
-  // pHsnsPwrOn();    // pHセンサの電源を入れる
   delay(2000);      // 起動画面の表示用
 
   // センサの接続確認
