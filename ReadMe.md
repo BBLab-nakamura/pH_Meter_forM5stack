@@ -1,7 +1,7 @@
 # pH_Meter_forM5stack
 
 ## 概要
-このプロジェクトは、M5stack用のArduinoプログラムで、pHセンサーの読み取り値をM5stackの画面で作成されたアナログメーターに表示します。
+このプログラムは、M5stack用のArduinoプログラムで、pHセンサーの読み取り値をM5stackの画面で作成されたアナログメーターに表示します。
 
 ## 動作確認条件
 - M5stack Basic
